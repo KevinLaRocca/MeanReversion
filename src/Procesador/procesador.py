@@ -207,7 +207,14 @@ def evaluar_probabilidad_simple(precio_actual, meta_arriba, meta_abajo, volatili
     sesgo_total = movimiento * sesgo_tendencia
     shocks = np.random.randn(pasos, simulaciones)
 
+<<<<<<< HEAD
     movimientos = np.exp((sesgo_total - 0.5 * (volatilidad**2)) * dt + volatilidad * np.sqrt(dt) * shocks)
+=======
+    movimientos = np.exp(
+        (sesgo_total - 0.5 * (volatilidad**2)) * dt
+        + volatilidad * np.sqrt(dt) * shocks
+    )
+>>>>>>> a49c31b9bf73650601091dfbc337a0a3e978a7f4
 
     caminos = np.zeros((pasos + 1, simulaciones))
     caminos[0] = precio_actual
@@ -249,4 +256,8 @@ if __name__ == "__main__":
     
     #price = black_scholes(100, 105.0, 0.25, 0.05, 0.2, "call")
     #print(f"El precio es: {price:.4f}")
+<<<<<<< HEAD
    #evaluar_probabilidad_simple(precio_actual=100, meta_arriba=102, meta_abajo=98, volatilidad=0.01, sesgo_tendencia = 1)
+=======
+   #evaluar_probabilidad_simple(precio_actual=100, meta_arriba=102, meta_abajo=98, volatilidad=0.01, sesgo_tendencia = 1)
+>>>>>>> a49c31b9bf73650601091dfbc337a0a3e978a7f4

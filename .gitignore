@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 venv/
 __pycache__/
 *.pyc
@@ -7,3 +8,7 @@ outputs/
 data/raw/*.csv
 data/processed/*.csv
 data/processed/*.parquet
+=======
+.venv
+.data\raw
+>>>>>>> a49c31b9bf73650601091dfbc337a0a3e978a7f4

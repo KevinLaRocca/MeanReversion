@@ -10,7 +10,7 @@ LOGS_DIR = os.path.join(BASE_DIR, 'logs')
 for carpeta in [DATA_RAW_DIR, OUTPUTS_DIR, OUTPUTS_PLOTS_DIR, LOGS_DIR]:
     os.makedirs(carpeta, exist_ok=True)
 
-TICKERS_TECH = ['BTC-USD', 'LTC-USD']
+SYMBOLS = ['BTC-USD', 'LTC-USD']
 
 K_CLUSTERS = 3
 RANDOM_STATE = 42
